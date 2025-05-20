@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+  scroll-behavior: smooth;
+}
+:root {
+  --background: 36 33% 97%;
+  --foreground: 20 14.3% 4.1%;
+
+  --primary: 15 50% 70%;
+  --primary-foreground: 60 9.1% 97.8%;
+
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+
+  --accent: 15 50% 70%;
+  --accent-foreground: 24 9.8% 10%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --ring: 20 14.3% 4.1%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 20 14.3% 4.1%;
+  --foreground: 60 9.1% 97.8%;
+
+  --primary: 15 50% 70%;
+  --primary-foreground: 60 9.1% 97.8%;
+
+  --secondary: 12 6.5% 15.1%;
+  --secondary-foreground: 60 9.1% 97.8%;
+
+  --muted: 12 6.5% 15.1%;
+  --muted-foreground: 24 5.4% 63.9%;
+
+  --accent: 15 50% 70%;
+  --accent-foreground: 60 9.1% 97.8%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 60 9.1% 97.8%;
+
+  --border: 12 6.5% 15.1%;
+  --input: 12 6.5% 15.1%;
+  --ring: 24 5.7% 82.9%;
+}
+
+body {
+  background-color: #f8f5f1;
+  color: #333;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.bg-gradient-glow {
+  background: linear-gradient(
+    45deg,
+    rgba(74, 144, 226, 0.3),
+    rgba(228, 167, 157, 0.3),
+    rgba(80, 200, 120, 0.3)
+  );
+  filter: blur(100px);
+}
+
+/* Grid animation */
+@keyframes grid-fade {
+  0% { opacity: 0.03; }
+  50% { opacity: 0.08; }
+  100% { opacity: 0.03; }
+}
+
+.grid-animate {
+  animation: grid-fade 4s ease-in-out infinite;
+}
+
+/* Feature card hover effect */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.hover-float:hover {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+.ani {
+  animation: UpDownAnimation1 3.5s ease-in-out infinite alternate;
+}
+
+.ani_2 {
+  animation: UpDownAnimation2 3.5s ease-in-out infinite alternate;
+}
+
+.leaf {
+  animation: Leaf 4s ease-in-out infinite alternate;
+}
+
+.leaf2 {
+  animation: Leaf2 3s ease-in-out infinite alternate;
+  rotate: 90deg;
+}
+
+#productLeaf {
+  animation: Leaf2 3s ease-in-out infinite alternate;
+}
+
+.Pestle {
+  animation: Leaf2 3s ease-in-out infinite alternate;
+}
+.Leaf4{
+  animation: Leaf2 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes UpDownAnimation1 {
+  0%{
+    top: -10%;
+  }
+  100%{
+    top: 0%;
+  }
+}
+
+
+@keyframes UpDownAnimation2 { 
+  0%{
+    bottom: 30%;
+  }
+  100%{
+    bottom: 25%;
+  }
+}
+
+@keyframes Leaf {
+  0%{
+    top: 0%;
+  }
+  100%{
+    top: 10%;
+  }
+}
+@keyframes Leaf2 {
+  0%{
+    top: 0%;
+  }
+  100%{
+    top: 10%;
+  }
+}
